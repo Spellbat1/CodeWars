@@ -18,9 +18,9 @@ public class Kata {
     // Reversing the digits
     int[] rev = new int[count];
     for(int i = 0; i < count; i++){
-      int dig = (int) n % 10;
+      long dig = n % 10;
       n = n/10;
-      rev[i] = dig;
+      rev[i] = (int) dig;
     }
     
     return rev;
